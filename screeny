@@ -1,0 +1,5 @@
+#!/bin/bash
+
+NAME="/home/kalap/Pictures/Screenshots/$(date +%s).png" 
+maim -s | tee "$NAME" | xclip -selection clipboard -t image/png 
+imv "$NAME"
